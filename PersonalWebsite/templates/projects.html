@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | My Personal Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('about') }}">About Me</a>
+            <a href="{{ url_for('blog') }}">Blog</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+        </nav>        
+    </header>
+    <main>
+        <section id="projects" class="fade-in">
+            <h1>Projects</h1>
+            <article>
+                <h2>Project Title</h2>
+                <p>Short description of your project...</p>
+                <a href="project-link.html">Learn More</a>
+            </article>
+            <!-- Add more project summaries here -->
+        </section>
+    </main>
+</body>
+</html>

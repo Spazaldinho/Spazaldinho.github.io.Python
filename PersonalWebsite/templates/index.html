@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('about') }}">About Me</a>
+            <a href="{{ url_for('blog') }}">Blog</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+        </nav>        
+    </header>
+    <main>
+        <section id="about" class="fade-in">
+            <h1>About Me</h1>
+            <div class="about-content">
+                <img src="{{ url_for('static', filename='viktor-theo-BNQX9TKxu8Q-unsplash.jpg') }}" alt="Your Name" class="headshot">
+                <p>Welcome to my personal website! My name is [Your Name], and I am a [Your Profession]. I enjoy [Some Hobbies].</p>
+            </div>
+        </section>
+        <section id="links" class="fade-in">
+            <h1>links</h1>
+            <p><a href="your-resume.pdf" target="_blank">Click here to view my resume (PDF).</a></p>
+        </section>
+    </main>
+</body>
+</html>
